@@ -6,6 +6,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
         <title>Mordeca's Responsive Layout</title>
     </head>
@@ -24,13 +27,16 @@
                             <li><a href="#portfolio">Portfolio</a></li>
                         </div>
                         <div class="nav">
+                            <li><a href="#signup">Newsletter</a></li>
+                        </div>
+                        <div class="nav">
                             <li><a href="#contact">Contact</a></li>
                         </div>
                     </ul>
                 </nav>
                 <div class="header-section">
                     <img src="img/responsive-layout-profile.png" alt="Mock profile picture">
-                    <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+                    <p class="header-para">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
                 </div>
             </header>
             <main>
@@ -68,9 +74,22 @@
                     </div>
                 </div>
             </main>
+            <form id="signup">
+                <fieldset>
+                    <legend>Newsletter</legend>
+                    <p>Sign up for our newsletter and become one of the first to hear about upcoming projects!</p>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="user_name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="user_email">
+                    <label for="topics">Tell us what projects interest you</label>
+                    <textarea id="topics" name="user-topics"></textarea>
+                    <button type="submit">Sign Up</button>
+                </fieldset>
+            </form>
             <footer>
                 <h2 id="contact">CONTACT</h2>
-                <p> If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+                <p class="footer-para"> If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
                 <p class="first-para">Phone &nbsp; <strong>+1 (111)555-1234</strong></p>
                 <p class="last-para">Email &nbsp; <strong>Mordecaixxii@Gmail.com</strong></p>
                 <ul class="footer-ul">

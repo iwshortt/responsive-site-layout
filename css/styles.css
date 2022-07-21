@@ -3,8 +3,7 @@
     box-sizing: border-box;
 }
 body {
-    margin: 0 auto;
-    max-width: 1024px;
+    background-color: rgb(249, 249, 249);
 }
 .container {
     text-align: center;
@@ -13,6 +12,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0 auto;
+    max-width: 1024px;
 }
 p {
     margin: 10px;
@@ -46,6 +47,11 @@ h1 {
 header img {
     width: 75%;
     margin: 30px 30px 10px;
+}
+.header-para {
+    font-size: 1.5rem;
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    color: #52bab3;
 }
 
 /* Links & Lists Styles */
@@ -109,6 +115,11 @@ footer {
     padding: 20px 15px;
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid rgb(230, 230, 230);
+}
+.footer-para {
+    font-family: 'Edu VIC WA NT Beginner', serif;
+    color: #52bab3;
 }
 .first-para {
     margin-top: 30px;
@@ -121,6 +132,57 @@ footer {
 }
 .full-container {
     margin-left: auto;
+}
+/* Form Styles */
+form {
+    width: 500px;
+    height: 500px;
+    max-width: 95%;
+    max-height: 95%;
+    margin: 25px 0 50px;
+    align-self: center;
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    background-color: rgb(249, 249, 249);
+    color: rgb(86, 86, 86);
+    border-radius: 10px;
+}
+fieldset {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+legend {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+label {
+    text-align: start;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+input,
+textarea,
+button {
+    border: 0;
+    border-radius: 7px;
+}
+input {
+    padding: 5px;
+    height: 35px;
+    background-color: rgb(230, 230, 230);
+}
+textarea {
+    resize: none;
+    height: 70px;
+    padding: 7px;
+    background-color: rgb(230, 230, 230);
+}
+button {
+    height: 50px;
+    background: #52bab3;
 }
 
 /* Media Queries 768px */
@@ -142,6 +204,9 @@ footer {
     header p {
         text-align: start;
         margin-left: 20px;
+    }
+    .header-section {
+        justify-content: space-between;
     }
 /* Links & Lists Styles */
     a {
@@ -167,6 +232,9 @@ footer {
         margin-left: auto;
         gap: 0;
     }
+    footer h2 {
+        padding: 30px 30px 0;
+    }
 }
 
 /* Media Queries 1024px */
@@ -178,8 +246,18 @@ footer {
         align-items: center;
     }
 /* Main Styles */
+    main {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
     .main-col {
         flex-basis: calc(33.333% - 20px);
+    }
+/* Footer Styles */
+    .footer-para {
+        max-width: 50%;
+        align-self: center;
+        line-height: 1.75rem;
     }
 }
 
