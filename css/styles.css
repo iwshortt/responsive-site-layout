@@ -4,6 +4,7 @@
 }
 body {
     background-color: rgb(249, 249, 249);
+    margin: 0;
 }
 .container {
     text-align: center;
@@ -117,6 +118,9 @@ footer {
     justify-content: space-between;
     border-top: 1px solid rgb(230, 230, 230);
 }
+.footer-user {
+    font-weight: 400;
+}
 .footer-para {
     font-family: 'Edu VIC WA NT Beginner', serif;
     color: #52bab3;
@@ -133,6 +137,7 @@ footer {
 .full-container {
     margin-left: auto;
 }
+
 /* Form Styles */
 form {
     width: 500px;
